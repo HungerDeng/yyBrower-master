@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gdut.dkmfromcg.yybrower.view.main.HomePageFragment">
+
+    <com.gdut.dkmfromcg.commonlib.widget.pullextend.PullExtendLayout
+        android:id="@+id/ly_pull_extend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+
+        <com.gdut.dkmfromcg.commonlib.widget.pullextend.ExtendListHeader
+            android:id="@+id/extend_list_head"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="100dp"
+                android:layout_above="@id/url_lay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/lakers"/>
+
+            <LinearLayout
+                android:id="@+id/url_lay"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_stroke_grey"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/url_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:id="@+id/scan"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="13dp"
+                    android:src="@drawable/saoma"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.gdut.dkmfromcg.commonlib.widget.pullextend.PullExtendLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottomControl"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/toLeft"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/left" />
+
+        <ImageView
+            android:id="@+id/toRight"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/right" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/pageNum"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/circle" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="15dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/more" />
+
+    </LinearLayout>
+
+</RelativeLayout>

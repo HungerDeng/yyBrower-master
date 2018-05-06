@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.gdut.dkmfromcg.yybrower"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    /*导入的module*/
+    implementation project(':common_lib')
+    implementation project(':brower-ui')
+    implementation project(':scan')
+    //Android.support
+    implementation rootProject.ext.dependencies["support_v4"]
+    implementation rootProject.ext.dependencies["appcompat_v7"]
+    implementation rootProject.ext.dependencies["cardview_v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["constraint_layout"]
+    // fragmentation 依赖
+    implementation rootProject.ext.dependencies["fragmentation"]
+    implementation rootProject.ext.dependencies["fragmentation_swipeback"]
+    //rx-android-java
+    implementation rootProject.ext.dependencies["rxjava"]
+    implementation rootProject.ext.dependencies["rxlifecycle"]
+    implementation rootProject.ext.dependencies["rxlifecycle_components"]
+    //网络请求库
+    implementation rootProject.ext.dependencies["retrofit2"]
+    implementation rootProject.ext.dependencies["adapter_rxjava"]
+    implementation rootProject.ext.dependencies["converter_fastjson_android"]
+    implementation rootProject.ext.dependencies["converter_scalars"]
+    implementation rootProject.ext.dependencies["logging_interceptor"]
+    //RecyclerView依赖
+    implementation rootProject.ext.dependencies["recyclerview_v7"]
+    implementation rootProject.ext.dependencies["base_recycler_view_adapter_helper"]
+    implementation rootProject.ext.dependencies["recycler_view_divider"]
+    //Glide图片处理
+    implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["glide_okhttp3_integration"]
+    annotationProcessor rootProject.ext.dependencies["glide_compiler"]
+    //fast_json
+    implementation rootProject.ext.dependencies["fastjson"]
+    //ButterKnife依赖
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife_compiler"]
+    //Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}

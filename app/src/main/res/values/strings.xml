@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">yyBrower</string>
+
+
+    <!--bottomSheet_more-->
+    <string name="bookmark_history">书签历史</string>
+    <string name="download">下载</string>
+    <string name="more">更多</string>
+    <string name="noHistory">无痕</string>
+    <string name="night">夜间</string>
+    <string name="exit">退出</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

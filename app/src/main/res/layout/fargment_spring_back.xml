@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gdut.dkmfromcg.commonlib.widget.PullSpringBackView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spring_back_fl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <!-- 注意: PullSpringBackView 中只能有一个子View,在该子View中写自己BottomDialog的布局-->
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/blue" />
+
+</com.gdut.dkmfromcg.commonlib.widget.PullSpringBackView>
+

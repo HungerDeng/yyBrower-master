@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_dialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/fragmentation_ic_stack" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_sign_up"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="点击登录"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/background"
+            android:src="@android:drawable/ic_menu_share" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_bookmark"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/bookmark"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_bookmark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="书签历史"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_download"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/download"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_download"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="下载管理"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/setting"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_more"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="更多"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_no_history"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@android:drawable/ic_menu_view" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_no_history"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="无痕浏览"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_day_night_mode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/night"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_day_night_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_day_night_mode"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="夜间模式"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/exit" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_exit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="退出软件"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
